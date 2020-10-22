@@ -1,22 +1,23 @@
 import React, {useState} from 'react';
 
 function MessageComponent() {
+    const[preM, setPreM] = useState('')
     const[message, setMessage] = useState('');
     const[sent, setSent] = useState(false);
 
     function HandleText(event) {
         event.preventDefault();
-        setMessage(event.target.value);
+        setPreM(event.target.value);
     }
 
     function HandleSubmit(event) {
         event.preventDefault();
+        setMessage(preM);
         setSent(true);
     }
 
     return(
         <>
-        {sent === false? 
         <div>
             <h4>Type your comment below</h4>
             <form>
@@ -27,12 +28,12 @@ function MessageComponent() {
                 <input type="submit" onClick={HandleSubmit} />
                 </p>
             </form>
+        </div>        
+
+        <div>
+            <p>Comments:</p>
+            <p>{message}</p>
         </div>
-        :<p>
-            <p>This was your comment:</p>
-            {message}
-        </p>
-        }
             
         </>
     )

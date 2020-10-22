@@ -8,7 +8,7 @@ import '../App.css';
 function SideComponent() {
     return (
         <>
-            <a href="https://www.thrillist.com/entertainment/nation/new-anime-2020">
+            <a href="https://www.thrillist.com/entertainment/nation/new-anime-2020" target="_blank">
                 <article className="SideContent">
                     <h3>Upcoming Anime 2020</h3>
                     <img src={otheri}
@@ -25,7 +25,7 @@ function SideComponent() {
             </a>
             <hr />
 
-            <a href="https://www.thrillist.com/entertainment/nation/new-anime-2020">
+            <a href="https://www.thrillist.com/entertainment/nation/new-anime-2020" target="_blank">
                 <article className="SideContent">
                     <h3>Strongest Anime Characters</h3>
                     <img src={otherii}
@@ -43,7 +43,7 @@ function SideComponent() {
 
             <hr />
 
-            <a href="https://www.thrillist.com/entertainment/nation/new-anime-2020">
+            <a href="https://www.thrillist.com/entertainment/nation/new-anime-2020" target="_blank">
                 <article className="SideContent">
                     <h3>Most Popular Anime of All Time</h3>
                     <img src={otheriii}

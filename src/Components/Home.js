@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as Bootstrap from "react-bootstrap";
 import NavBar from './NavBar';
@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import Articles from './PreviewArticleComponents/Articlehgp';
 import Footer from './FooterComponent';
+import Verify from './LoggedInVerify';
 
 function HomePage() {
 
-
   return (
     <>
-      <NavBar />
+      <NavBar/>
       <Carousel />
       <div className="MajorContainer">
         <Bootstrap.Jumbotron>
