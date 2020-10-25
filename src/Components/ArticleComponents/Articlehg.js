@@ -11,7 +11,6 @@ import Vote from '../VoteComponent';
 function ArticleOne() {
     return (
         <div>
-            <Navbar />
             <div className="Paage">
             <div className="Page">
                 <div className="LeftPage">

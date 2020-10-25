@@ -5,11 +5,14 @@ import logo from './logo.png';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import Verify from './LoggedInVerify';
+import { ChangeTheme } from '../UseTheme';
 
-function NavBar() {
+function NavBar(props) {
     const verify = Verify();
+    const theme = ChangeTheme();
 
     return (
+        <div className="">
         <Bootstrap.Navbar bg="dark" variant="dark" expand="lg">
             <Bootstrap.Navbar.Brand href="#home">
                 <img
@@ -24,6 +27,7 @@ function NavBar() {
             <Bootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Bootstrap.Navbar.Collapse id="basic-navbar-nav">
                 <Bootstrap.Nav className="ml-auto">
+                    {props.children}
                     {
                         verify.userLoggedIn === false &&
                         <Bootstrap.Nav.Link href="#">
@@ -46,6 +50,7 @@ function NavBar() {
                 </Bootstrap.Nav>
             </Bootstrap.Navbar.Collapse>
         </Bootstrap.Navbar>
+        </div>
     );
 }
 

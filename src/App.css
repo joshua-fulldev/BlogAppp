@@ -1,5 +1,23 @@
-.App {
-  
+.FooterLink:hover {
+  font-size: 130%;
+  color: white;
+  text-decoration: none;
+}
+
+.AppLight {
+  margin: 0;
+  background-color: white;
+  color: black;
+}
+
+.AppDark {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.ThemeButton {
+  margin-right: 15px;
 }
 
 .App-logo {

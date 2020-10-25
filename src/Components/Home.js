@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as Bootstrap from "react-bootstrap";
 import NavBar from './NavBar';
@@ -9,27 +9,30 @@ import Articles from './PreviewArticleComponents/Articlehgp';
 import Footer from './FooterComponent';
 import Verify from './LoggedInVerify';
 
+
 function HomePage() {
 
   return (
+    <div className="">
     <>
-      <NavBar/>
-      <Carousel />
+      <Carousel />      
       <div className="MajorContainer">
-        <Bootstrap.Jumbotron>
+        <Bootstrap.Jumbotron bg-color="none">
           <h1>One Piece</h1>
           <p>
             One Piece is a Japanese manga series written and illustrated by Eiichiro Oda.
             It has been serialized in Shueisha's Weekly Shōnen Jump magazine since July 1997,
             with its individual chapters compiled into 97 tankōbon volumes as of September 2020
             .
-        </p>
+            </p>
         </Bootstrap.Jumbotron>
-        <Articles/>
+        <Articles />
       </div>
       <Footer />
+      
 
     </>
+    </div>
   );
 }
 

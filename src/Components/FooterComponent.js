@@ -16,8 +16,8 @@ function FooterComponent() {
                     alt="" />
                 </p>
 
-                <p>Want More From Alcove</p>
-                <p>Sign Up to Our NewsLetter</p>
+                <a href="https://www.google.com" className="FooterLink"><p>Want More From Alcove</p></a>
+                <a href="https://www.google.com" className="FooterLink"><p>Sign Up to Our NewsLetter</p></a>
 
                 <Bootstrap.Form>
                     <Bootstrap.Form.Group controlId="formBasicEmail">
@@ -41,12 +41,12 @@ function FooterComponent() {
             </div>
             <div className="SColumn">
                 <ul className="IntoS">
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Newsletter</li>
-                    <li>Privacy Policy</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <a href="https://www.google.com" className="FooterLink"><li>About</li></a>
+                    <a href="https://www.google.com" className="FooterLink"><li>Contact</li></a>
+                    <a href="https://www.google.com" className="FooterLink"><li>Newsletter</li></a>
+                    <a href="https://www.google.com" className="FooterLink"><li>Privacy Policy</li></a>
+                    <a href="https://www.google.com" className="FooterLink"><li>About</li></a>
+                    <a href="https://www.google.com" className="FooterLink"><li>Contact</li></a>
                 </ul>
 
             </div>
