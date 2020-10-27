@@ -7,30 +7,24 @@ import Login from './Components/Login';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from './UseTheme';
 import NavBar from './Components/NavBar';
+import App from './App';
 
 function MyRouter() {
     return (
-        <>
-            {
-                <ThemeProvider>
-                    <BrowserRouter>
-                        <Switch>
-                            <Route exact path="/" component={Home} />
-                            <Route exact path="/" component={NavBar} />
-                            <Route exact path="/home" component={Home} />
-                            <Route path="/login" component={Login} />
-                            <Route path="/articlea" component={ArticleA} />
-                            <Route path="/articleb" component={ArticleA} />
-                            <Route path="/articlec" component={ArticleA} />
-                            <Route path="/articled" component={ArticleA} />
-                            <Route path="/articlee" component={ArticleA} />
-                            <Route path="/articlef" component={ArticleA} />
-                        </Switch>
-                    </BrowserRouter>
-                </ThemeProvider>
-            }
-        </>
+        <ThemeProvider>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/home" component={Home} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/" component={Home} />
+                </Switch>
+            </BrowserRouter>
+        </ThemeProvider>
+
+
     );
 }
+
+export { MyRouter };
 
 export default MyRouter;

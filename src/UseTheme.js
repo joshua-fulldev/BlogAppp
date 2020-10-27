@@ -1,9 +1,9 @@
 import React, { useContext, createContext, useState} from 'react';
 
-const themeContext = createContext();
+const ThemeContext = createContext();
 
 function UseTheme() {
-    const context = useContext(themeContext);
+    const context = useContext(ThemeContext);
     if (!context){
         throw new Error(`Context not found`);
     }
@@ -32,7 +32,7 @@ function ChangeTheme() {
 
 function ThemeProvider({children}) {
     const screenMode = ChangeTheme();
-    return <themeContext.Provider value={screenMode}>{children}</themeContext.Provider>
+    return <ThemeContext.Provider value={screenMode.mode}>{children}</ThemeContext.Provider>
 }
 
 export {ThemeProvider, ChangeTheme};
